@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AmbientAudio from "./components/ambient-audio";
 import FloatingPetals from "./components/floating-petals";
+import TrailerEmbed from "./components/trailer-embed";
 
 const storyHighlights = [
   {
@@ -65,11 +66,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_38%),linear-gradient(90deg,rgba(5,7,11,0.8),rgba(5,7,11,0.18),rgba(5,7,11,0.7))]" />
           <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#071018] via-[#071018]/65 to-transparent" />
 
-          <div className="absolute left-6 right-6 top-24 sm:left-12 sm:right-auto sm:top-1/2 sm:-translate-y-1/2">
-            <div className="inline-block rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[9px] tracking-[0.32em] text-rose-100/90 uppercase backdrop-blur-sm">
+          <div className="hero-copy absolute left-6 right-6 top-24 sm:left-12 sm:right-auto sm:top-1/2 sm:-translate-y-1/2">
+            <div className="fade-up inline-block rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[9px] tracking-[0.32em] text-rose-100/90 uppercase backdrop-blur-sm">
               Shiori Kagawa
             </div>
-            <h1 className="mt-5 text-[2.5rem] font-light leading-[1.05] tracking-[0.2em] text-white/95 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)] sm:text-[4.5rem]">
+            <h1 className="fade-up mt-5 text-[2.5rem] font-light leading-[1.05] tracking-[0.2em] text-white/95 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)] sm:text-[4.5rem]">
               永遠に
               <span className="mt-2 block">あなたのもの</span>
             </h1>
@@ -89,7 +90,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 right-6 text-[9px] tracking-[0.5em] text-zinc-300 sm:right-12 sm:text-[10px]">
+          <div className="hero-scroll absolute bottom-8 right-6 text-[9px] tracking-[0.5em] text-zinc-300 sm:right-12 sm:text-[10px]">
             SCROLL
           </div>
         </section>
@@ -195,6 +196,74 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="border-t border-white/10 px-6 py-20 sm:px-12 sm:py-28">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-10 flex items-end justify-between gap-6">
+              <div>
+                <p className="text-[10px] tracking-[0.35em] uppercase text-zinc-500">
+                  Trailer / Preview
+                </p>
+                <h2 className="mt-4 text-3xl font-light tracking-[0.06em] text-white sm:text-5xl">
+                  Sebuah jeda untuk merasa.
+                </h2>
+              </div>
+              <p className="hidden max-w-xs text-right text-[10px] uppercase leading-6 tracking-[0.22em] text-zinc-600 sm:block">
+                A FILM DEDICATED TO SHIORI KAGAWA
+              </p>
+            </div>
+
+            <div className="grid gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:items-stretch">
+              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#111820] shadow-[0_24px_80px_rgba(0,0,0,0.3)]">
+                <div className="aspect-video">
+                  <TrailerEmbed />
+                </div>
+                <div className="flex items-center justify-between border-t border-white/10 px-5 py-4 text-[10px] uppercase tracking-[0.22em] text-zinc-500 sm:px-7">
+                  <span>永遠にあなたのもの</span>
+                  <span>Trailer 01</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] to-transparent p-6 sm:p-8">
+                <p className="text-[10px] tracking-[0.35em] uppercase text-zinc-500">
+                  Suasana yang tertahan
+                </p>
+                <p className="mt-6 text-sm leading-8 text-zinc-300">
+                  Sebuah sekilas visual dari momen-momen yang paling menyakitkan dan paling indah dalam perjalanan Shiori dan orang yang ia cintai.
+                </p>
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <p className="text-[10px] uppercase tracking-[0.25em] text-zinc-600">
+                    Di dalam koleksi
+                  </p>
+                  <ul className="mt-5 space-y-4 text-sm leading-7 text-zinc-400">
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-rose-300" />
+                      Poster dan visual utama film.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-rose-300" />
+                      Surat dan catatan yang belum selesai.
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-auto flex flex-wrap gap-4 pt-8">
+                <Link
+                  href="/koleksi"
+                  className="inline-flex items-center justify-center rounded-full border border-rose-200/40 bg-rose-100/10 px-5 py-3 text-[10px] uppercase tracking-[0.24em] text-white transition hover:border-white/60 hover:bg-white hover:text-[#071018]"
+                >
+                  Koleksi Film
+                </Link>
+                <Link
+                  href="/cerita"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.02] px-5 py-3 text-[10px] uppercase tracking-[0.24em] text-zinc-200 transition hover:border-white/40 hover:text-white"
+                >
+                  Baca Cerita
+                </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="pemeran" className="border-t border-white/10 px-6 py-20 sm:px-12 sm:py-28">
           <div className="mx-auto max-w-6xl">
             <p className="text-center text-[10px] tracking-[0.35em] uppercase text-zinc-500">
@@ -225,7 +294,7 @@ export default function Home() {
                   name: "Hiyori Kagawa",
                   japaneseName: "香川ひより",
                   image: "/cast/hiyori-kagawa.webp",
-                  profile: "Adik Shiori dan bagian penting dari cerita keluarga ini.",
+                  profile: "Hiyori Kagawa, adik Shiori, menjadi bagian penting dari cerita dan kenangan yang menjaga kehadiran Shiori tetap dekat.",
                 },
               ].map((item) => (
                 <Link
@@ -261,10 +330,25 @@ export default function Home() {
           </div>
         </section>
 
+        <footer className="border-t border-white/10 px-6 py-10 sm:px-12">
+          <div className="mx-auto flex max-w-6xl flex-col gap-6 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.35em] text-zinc-500">Shiori Kagawa</p>
+              <p className="mt-3 text-sm text-zinc-400">永遠にあなたのもの — sebuah kisah yang tetap hidup dalam ingatan.</p>
+            </div>
+            <nav className="flex flex-wrap justify-center gap-5 text-[10px] uppercase tracking-[0.22em] text-zinc-500 sm:justify-end">
+              <Link href="#sinopsis" className="transition hover:text-white">Sinopsis</Link>
+              <Link href="#cerita" className="transition hover:text-white">Cerita</Link>
+              <Link href="#pemeran" className="transition hover:text-white">Pemeran</Link>
+              <Link href="/koleksi" className="transition hover:text-white">Koleksi</Link>
+            </nav>
+          </div>
+        </footer>
+
         <section className="border-t border-white/10 px-6 py-20 text-center sm:px-12">
           <div className="mx-auto max-w-xl space-y-2 text-xs tracking-[0.2em] text-zinc-500 leading-relaxed">
             <p>Dipersembahkan untuk — Shiori Kagawa</p>
-            <p>Pemeran — Asep Kurnia / Hiyori Kagawa</p>
+            <p>Pemeran — Shiori Kagawa / Asep Kurnia / Hiyori Kagawa</p>
             <p>Produksi — LIAS STUDIO</p>
           </div>
         </section>
