@@ -53,7 +53,7 @@ export default function Home() {
       </header>
 
       <main className="relative overflow-hidden">
-        <section className="relative h-screen w-full overflow-hidden bg-[#0b1220]">
+        <section className="relative h-[100svh] min-h-[720px] w-full overflow-hidden bg-[#0b1220]">
           <Image
             src="/poster.jpg"
             alt="Poster film Eien ni Anata no Mono"
