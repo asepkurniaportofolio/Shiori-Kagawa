@@ -80,7 +80,8 @@ export default function KoleksiPage() {
                   src="/poster.jpg"
                   alt="Poster film 永遠にあなたのもの"
                   fill
-                  className="object-cover opacity-80"
+                  className="absolute inset-0 h-full w-full object-cover object-center opacity-80"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e14] via-transparent to-black/20" />
                 <div className="absolute inset-x-0 bottom-0 p-6">
