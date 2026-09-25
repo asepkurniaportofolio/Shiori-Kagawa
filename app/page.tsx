@@ -27,7 +27,7 @@ export default function Home() {
 
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#071018]/40 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-          <span className="text-[10px] font-medium tracking-[0.35em] text-white/80 uppercase sm:text-xs">
+          <span className="header-brand-vertical text-[10px] font-medium tracking-[0.35em] text-white/80 uppercase sm:text-xs">
             永遠にあなたのもの
           </span>
 

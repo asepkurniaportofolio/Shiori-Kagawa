@@ -24,6 +24,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.header-brand-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+}
+
 ::selection {
   background: rgba(251, 113, 133, 0.35);
   color: white;
