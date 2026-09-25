@@ -309,7 +309,7 @@ export default function Home() {
                         alt={`Foto ${item.name}`}
                         fill
                         sizes="(max-width: 640px) 45vw, 240px"
-                        className="object-contain transition duration-500 group-hover:scale-105"
+                        className={`${item.slug === "hiyori-kagawa" ? "object-cover object-top" : "object-contain"} transition duration-500 group-hover:scale-105`}
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-[10px] uppercase tracking-[0.2em] text-zinc-700">
