@@ -309,7 +309,7 @@ export default function Home() {
                         alt={`Foto ${item.name}`}
                         fill
                         sizes="(max-width: 640px) 45vw, 240px"
-                        className="object-cover object-center transition duration-500 group-hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
                         style={{ objectFit: "cover", objectPosition: "center" }}
                       />
                     ) : (

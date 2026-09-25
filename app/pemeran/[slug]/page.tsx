@@ -77,7 +77,7 @@ export default async function PemeranPage({
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 420px"
-              className="object-cover object-center"
+              className="absolute inset-0 h-full w-full object-cover object-center"
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
           ) : (
