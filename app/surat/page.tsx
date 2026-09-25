@@ -136,7 +136,7 @@ export default function SuratPage() {
             alt="Foto Shiori Kagawa"
             width={220}
             height={290}
-            className="object-cover opacity-75 grayscale"
+            className="object-contain opacity-75 grayscale"
           />
         </div>
         <div className="mb-20 border-b border-black/10 pb-12">

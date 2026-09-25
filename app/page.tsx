@@ -60,7 +60,7 @@ export default function Home() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-80"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-80"
           />
 
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_38%),linear-gradient(90deg,rgba(5,7,11,0.8),rgba(5,7,11,0.18),rgba(5,7,11,0.7))]" />
@@ -309,7 +309,7 @@ export default function Home() {
                         alt={`Foto ${item.name}`}
                         fill
                         sizes="(max-width: 640px) 45vw, 240px"
-                        className="object-cover transition duration-500 group-hover:scale-105"
+                        className="object-contain transition duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-[10px] uppercase tracking-[0.2em] text-zinc-700">
