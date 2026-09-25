@@ -66,14 +66,14 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_38%),linear-gradient(90deg,rgba(5,7,11,0.8),rgba(5,7,11,0.18),rgba(5,7,11,0.7))]" />
           <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#071018] via-[#071018]/65 to-transparent" />
 
-          <div className="hero-copy absolute left-6 right-6 top-24 flex items-start gap-4 sm:left-12 sm:right-auto sm:top-1/2 sm:gap-7 sm:-translate-y-1/2">
-            <div className="fade-up mt-1 inline-block rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[9px] tracking-[0.32em] text-rose-100/90 uppercase backdrop-blur-sm">
-              Shiori Kagawa
-            </div>
+          <div className="hero-copy absolute left-6 right-6 top-24 flex w-fit flex-col items-center sm:left-12 sm:right-auto sm:top-1/2 sm:-translate-y-1/2">
             <h1 className="hero-title-vertical fade-up text-[clamp(2rem,6svh,4.5rem)] font-light leading-[1.05] tracking-[0.2em] text-white/95 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               永遠に
               <span>あなたのもの</span>
             </h1>
+            <div className="fade-up mt-4 inline-block rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[9px] tracking-[0.32em] text-rose-100/90 uppercase backdrop-blur-sm">
+              Shiori Kagawa
+            </div>
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 sm:px-12 sm:pb-16">
