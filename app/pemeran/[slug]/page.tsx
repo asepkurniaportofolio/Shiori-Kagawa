@@ -78,6 +78,7 @@ export default async function PemeranPage({
               priority
               sizes="(max-width: 1024px) 80vw, 420px"
               className="object-cover object-center"
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           ) : (
             <div className="flex h-full items-center justify-center px-8 text-center text-[10px] uppercase tracking-[0.25em] text-zinc-600">
