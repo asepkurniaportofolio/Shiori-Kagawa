@@ -77,7 +77,7 @@ export default async function PemeranPage({
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 420px"
-              className={profile.name === "Hiyori Kagawa" ? "object-cover object-top" : "object-contain"}
+              className="object-cover object-center"
             />
           ) : (
             <div className="flex h-full items-center justify-center px-8 text-center text-[10px] uppercase tracking-[0.25em] text-zinc-600">
