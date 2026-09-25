@@ -70,7 +70,7 @@ export default function Home() {
             <div className="fade-up inline-block rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[9px] tracking-[0.32em] text-rose-100/90 uppercase backdrop-blur-sm">
               Shiori Kagawa
             </div>
-            <h1 className="hero-title-vertical fade-up mt-5 text-[2.5rem] font-light leading-[1.05] tracking-[0.2em] text-white/95 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)] sm:text-[4.5rem]">
+            <h1 className="hero-title-vertical fade-up mt-5 text-[clamp(2rem,6svh,4.5rem)] font-light leading-[1.05] tracking-[0.2em] text-white/95 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               永遠に
               <span>あなたのもの</span>
             </h1>

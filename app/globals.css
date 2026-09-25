@@ -25,6 +25,9 @@ body {
 }
 
 .hero-title-vertical {
+  display: inline-block;
+  max-height: calc(100svh - 9rem);
+  overflow: visible;
   writing-mode: vertical-rl;
   text-orientation: upright;
   white-space: nowrap;
