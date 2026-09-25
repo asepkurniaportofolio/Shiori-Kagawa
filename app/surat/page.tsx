@@ -106,7 +106,7 @@ export default function SuratPage() {
 
       <div className={hasOpened ? "letter-content letter-reveal" : "hidden"}>
         <header className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 px-6 py-5 sm:px-12">
-        <Link href="/" className="header-brand-vertical text-xs tracking-[0.28em] text-white/80 transition hover:text-white">
+        <Link href="/" className="text-xs tracking-[0.28em] text-white/80 transition hover:text-white">
           永遠にあなたのもの
         </Link>
         <div className="flex items-center gap-4">

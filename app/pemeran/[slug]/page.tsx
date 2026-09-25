@@ -56,7 +56,7 @@ export default async function PemeranPage({
       <header className="flex items-center justify-between border-b border-white/10 px-6 py-5 sm:px-12">
         <Link
           href="/"
-          className="header-brand-vertical text-xs tracking-[0.28em] text-white/80 transition hover:text-white"
+          className="text-xs tracking-[0.28em] text-white/80 transition hover:text-white"
         >
           永遠にあなたのもの
         </Link>

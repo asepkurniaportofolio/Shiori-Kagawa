@@ -30,7 +30,7 @@ export default function KoleksiPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 sm:px-12">
           <Link
             href="/"
-            className="header-brand-vertical text-xs tracking-[0.28em] text-white/80 transition hover:text-white"
+            className="text-xs tracking-[0.28em] text-white/80 transition hover:text-white"
           >
             永遠にあなたのもの
           </Link>

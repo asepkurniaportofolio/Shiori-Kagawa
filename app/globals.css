@@ -24,7 +24,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-brand-vertical {
+.hero-title-vertical {
   writing-mode: vertical-rl;
   text-orientation: upright;
   white-space: nowrap;
