@@ -302,14 +302,14 @@ export default function Home() {
                   href={`/pemeran/${item.slug}`}
                   className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-4 transition-transform duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.04]"
                 >
-                  <div className="relative mb-5 aspect-[3/4] overflow-hidden rounded-[1.2rem] border border-white/10 bg-zinc-900">
+                  <div className="relative mb-5 aspect-[3/4] overflow-hidden rounded-[1.2rem] border border-white/10 bg-[#121922] shadow-[0_16px_36px_rgba(0,0,0,0.18)]">
                     {item.image ? (
                       <Image
                         src={item.image}
                         alt={`Foto ${item.name}`}
                         fill
                         sizes="(max-width: 640px) 45vw, 240px"
-                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover object-center brightness-[0.92] contrast-[0.96] saturate-[0.88] transition duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-100 group-hover:saturate-100"
                         style={{ objectFit: "cover", objectPosition: "center" }}
                       />
                     ) : (
@@ -317,6 +317,7 @@ export default function Home() {
                         Foto segera ditambahkan
                       </div>
                     )}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/[0.04]" />
                   </div>
                   <p className="text-[10px] tracking-[0.22em] text-zinc-600">{item.japaneseName}</p>
                   <p className="mt-2 text-xl font-light text-white">{item.name}</p>
