@@ -75,7 +75,7 @@ export default function KoleksiPage() {
 
           <div className="relative z-10">
             <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#10151d] shadow-[0_30px_90px_rgba(0,0,0,0.35)]">
-              <div className="relative aspect-video overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src="/poster.jpg"
                   alt="Poster film 永遠にあなたのもの"
