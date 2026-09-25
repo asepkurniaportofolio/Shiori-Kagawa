@@ -300,9 +300,9 @@ export default function Home() {
                 <Link
                   key={item.name}
                   href={`/pemeran/${item.slug}`}
-                  className="group grid gap-6 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-4 transition-transform duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.04] md:grid-cols-[0.7fr_1.3fr] md:items-center md:gap-10 md:p-6"
+                  className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-4 transition-transform duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.04]"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-[1.2rem] border border-white/10 bg-[#121922] shadow-[0_16px_36px_rgba(0,0,0,0.18)]">
+                  <div className="relative mb-5 aspect-[3/4] overflow-hidden rounded-[1.2rem] border border-white/10 bg-[#121922] shadow-[0_16px_36px_rgba(0,0,0,0.18)]">
                     {item.image ? (
                       <Image
                         src={item.image}
@@ -319,18 +319,13 @@ export default function Home() {
                     )}
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/[0.04]" />
                   </div>
-                  <div className="flex h-full flex-col justify-center py-2 md:py-6">
-                    <p className="text-[10px] tracking-[0.35em] text-zinc-600">出演者プロフィール / Profil Pemeran</p>
-                    <p className="mt-8 text-sm tracking-[0.22em] text-zinc-600">{item.japaneseName}</p>
-                    <p className="mt-4 text-3xl font-light tracking-[0.04em] text-white sm:text-5xl">{item.name}</p>
-                    <p className="mt-7 max-w-xl text-base leading-8 text-zinc-300">{item.profile}</p>
-                    <div className="mt-10 border-l border-red-800/60 pl-5">
-                      <p className="text-[10px] uppercase tracking-[0.25em] text-zinc-500">{item.role}</p>
-                      <p className="mt-4 text-[10px] uppercase tracking-[0.25em] text-zinc-400 transition group-hover:text-white">
-                        Lihat profil →
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-[10px] tracking-[0.22em] text-zinc-600">{item.japaneseName}</p>
+                  <p className="mt-2 text-xl font-light text-white">{item.name}</p>
+                  <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-zinc-500">{item.role}</p>
+                  <p className="mt-5 border-t border-white/10 pt-4 text-xs leading-6 text-zinc-500">{item.profile}</p>
+                  <p className="mt-5 text-[10px] uppercase tracking-[0.25em] text-zinc-400 transition group-hover:text-white">
+                    Lihat profil →
+                  </p>
                 </Link>
               ))}
             </div>
